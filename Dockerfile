@@ -1,6 +1,5 @@
 # ベース（Corepack 有効化）
 FROM node:20-slim AS base
-ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 # pnpm を Corepack で有効化（Node 20 推奨）
 RUN corepack enable && corepack prepare pnpm@9.12.2 --activate
